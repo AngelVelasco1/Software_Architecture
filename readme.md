@@ -3,7 +3,7 @@
 ## ¿Que es?
 Es el diseño de un sistema de software, que define sus **componentes**, **relaciones** e **interaccion**.
 
-## 🔢Tipos
+## Tipos
 <details>
 <summary><span style="font-size: 18px; font-weight: bold;">Arquitectura Monolítica</span></summary>
 
@@ -29,7 +29,7 @@ El sistema se divide en servicios que pueden ser proporcionados por distintos pr
 </details>
 
 
-## 🎖️Importancia
+## Importancia
 
 - Garantiza que un sistema sea robusto.
 
@@ -44,9 +44,10 @@ El sistema se divide en servicios que pueden ser proporcionados por distintos pr
 ## ¿Que son?
 Son <mark style="background-color: #c7f6d4;">soluciones habituales</mark> a problemas recurrentes en el diseño de software.
 
-Son planos ya testeados que se pueden personalizar para resolver un problema especifico.
-
 ▶️ No es una porcion especifica de codigo, es un concepto general para resolver un problema particular
+
+> 📌
+> Son planos ya testeados que se pueden personalizar para resolver un problema especifico.
 
 ## Clasificacion
 Los patrones se clasifican por su proposito u objetivo.
@@ -56,3 +57,12 @@ Los patrones se clasifican por su proposito u objetivo.
 2️⃣ **Patrones Estructurales** explican la forma en que se deben construir los objetos y las clases en estructuras mas grandes.
 
 3️⃣ **Patrones de Comportamiento** se encargan de definir la comunicacion, interaccion y las responsabilidades entre los objetos.
+
+## Ejemplos
+
+### Factory Method
+Es un patron de diseño creacional que nos proporciona una interfaz para crear objetos usando una superclase, que permite a sus subclases usar la misma interfaz para crear objetos diferentes.
+
+![image](./img/factory.png)
+> :bulb:
+> En este caso tenemos una superclase llamada logistica, con toda la info base para realizar la logistica de envios. Esta superclase es la que nos proporciona la interfaz para crear objetos distintos como una logistica terrestre y una logistica maritima con propiedades en comun de la superclase y a la vez propias.
