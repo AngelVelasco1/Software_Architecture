@@ -105,6 +105,7 @@ Un patrón de arquitectura de software sirve, entre sus principales funciones, c
 
 ### Arquitectura por capas
 Se basa en el enfoque por niveles. Cada nivel presta un servicio especifico al nivel superior. Su punto central es la persistencia de la informacion en la base de datos.
+
 ✍️ La estructura de esta arquitectura mas usada es el MVC (Model View Controller), estas son sus capas:
 
 #### 1. Capa de Persistencia (Base de datos)
