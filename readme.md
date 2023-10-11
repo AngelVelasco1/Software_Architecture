@@ -46,17 +46,16 @@ Son <mark style="background-color: #c7f6d4;">soluciones habituales</mark> a prob
 
 ▶️ No es una porcion especifica de codigo, es un concepto general para resolver un problema particular
 
-> 📌
 > Son planos ya testeados que se pueden personalizar para resolver un problema especifico.
 
 ## Clasificacion
 Los patrones se clasifican por su proposito u objetivo.
 
-1️⃣ **Patrones Creacionales** su objetivo es proporcionar mecanismos para crear objetos y clases flexibles y reutilizables.
+1️⃣ **Patrones Creacionales**: su objetivo es proporcionar mecanismos para crear objetos y clases flexibles y reutilizables.
 
-2️⃣ **Patrones Estructurales** explican la forma en que se deben construir los objetos y las clases en estructuras mas grandes.
+2️⃣ **Patrones Estructurales**: explican la forma en que se deben construir los objetos y las clases en estructuras mas grandes.
 
-3️⃣ **Patrones de Comportamiento** se encargan de definir la comunicacion, interaccion y las responsabilidades entre los objetos.
+3️⃣ **Patrones de Comportamiento**: se encargan de definir la comunicacion, interaccion y las responsabilidades entre los objetos.
 
 ## Ejemplos
 
@@ -76,3 +75,11 @@ Es un patrón también creacional que nos asegura que una clase u objeto se crea
 ![image](./img/singleton.png)
 
 
+### Chain of responsability
+Es un patron de diseño de comportamiento, el cual estructura las solicitudes en una cadena de manejadores/controladores. Cada manejador decide como procesar esta solicitud, sí bloquearla o pasarla al siguiente manejador.
+![image](./img/chain-of-responsibility.png)
+
+> :bulb:
+> Por ejemplo podrias tener un sistema de login en una app de pedidos, el cual deseas permitir el acceso solo a usuarios autenticados, de forma que puedan hacer pedidos. Ademas de que los usuarios administrativos tengan acceso a todo el sistema.
+
+> Las comprobaciones se deberian hacer de forma secuencial. La app intentara autenticar a un usuario al recibir la solicitud con sus credenciales, sí son correctas continuara con otra validacion de token, y luego de cache, etc; hasta que tenga acceso al sistema de pedidos. Cada una de estas validaciones son un manejador.
