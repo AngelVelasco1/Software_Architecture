@@ -66,3 +66,13 @@ Es un patron de diseño creacional que nos proporciona una interfaz para crear o
 ![image](./img/factory.png)
 > :bulb:
 > En este caso tenemos una superclase llamada logistica, con toda la info base para realizar la logistica de envios. Esta superclase es la que nos proporciona la interfaz para crear objetos distintos como una logistica terrestre y una logistica maritima con propiedades en comun de la superclase y a la vez propias.
+
+### Singleton
+Es un patrón también creacional que nos asegura que una clase u objeto se crea una sola vez, es decir, tiene una única instancia. Esto permite que el objeto sea compartido y accedido de manera global.
+
+⚠️ Este patrón es imposible de usar en un constructor normal, ya que al llamar al constructor, siempre se devolverá una nueva instancia.
+
+⏫ Nos da la posibilidad de acceder a un objeto desde cualquier parte del programa, a la vez que evita que otro código sobrescriba esa instancia.
+![image](./img/singleton.png)
+
+
