@@ -1,29 +1,29 @@
 # 💻Arquitectura de Software
 
-## ❓Que es
+## ¿Que es?
 Es el diseño de un sistema de software, que define sus **componentes**, **relaciones** e **interaccion**.
 
 ## 🔢Tipos
 <details>
-<summary><span style="font-size: 17px; font-weight: bold;">Arquitectura Monolítica</span></summary>
+<summary><span style="font-size: 18px; font-weight: bold;">Arquitectura Monolítica</span></summary>
 
 Todo el sistema funciona en un único componente
 </details>
 
 <details>
-<summary><span style="font-size: 17px; font-weight: bold;">Arquitectura Monolítica</span></summary>
+<summary><span style="font-size: 18px; font-weight: bold;">Arquitectura Cliente-Servidor</span></summary>
 
 El sistema se divide en dos componentes, el cliente que solicita servicios a un servidor y funciona como interfaz para el usuario; y el servidor que provee estos servicios al cliente.
 </details>
 
 <details>
-<summary><span style="font-size: 17px; font-weight: bold;">Arquitectura Distribuida</span></summary>
+<summary><span style="font-size: 18px; font-weight: bold;">Arquitectura Distribuida</span></summary>
 
 El sistema es dividido en varios componentes que se ejecutan en distintas máquinas.
 </details>
 
 <details>
-<summary><span style="font-size: 17px; font-weight: bold;">Arquitectura Orientada a Servicios</span></summary>
+<summary><span style="font-size: 18px; font-weight: bold;">Arquitectura Orientada a Servicios</span></summary>
 
 El sistema se divide en servicios que pueden ser proporcionados por distintos proveedores, estos servicios se comunican entre sí.
 </details>
@@ -32,5 +32,27 @@ El sistema se divide en servicios que pueden ser proporcionados por distintos pr
 ## 🎖️Importancia
 
 - Garantiza que un sistema sea robusto.
+
 - Permite la escalabilidad del sistema, podra adapdarse a las necesidades cambiantes.
+
 - Facilita la mantenibilidad del sistema, haciendolo facil de entender y modificar.
+
+
+
+# 🖌️Patrones de Diseño
+
+## ¿Que son?
+Son <mark style="background-color: #c7f6d4;">soluciones habituales</mark> a problemas recurrentes en el diseño de software.
+
+Son planos ya testeados que se pueden personalizar para resolver un problema especifico.
+
+▶️ No es una porcion especifica de codigo, es un concepto general para resolver un problema particular
+
+## Clasificacion
+Los patrones se clasifican por su proposito u objetivo.
+
+1️⃣ **Patrones Creacionales** su objetivo es proporcionar mecanismos para crear objetos y clases flexibles y reutilizables.
+
+2️⃣ **Patrones Estructurales** explican la forma en que se deben construir los objetos y las clases en estructuras mas grandes.
+
+3️⃣ **Patrones de Comportamiento** se encargan de definir la comunicacion, interaccion y las responsabilidades entre los objetos.
