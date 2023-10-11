@@ -57,12 +57,13 @@ Los patrones se clasifican por su proposito u objetivo.
 
 3️⃣ **Patrones de Comportamiento**: se encargan de definir la comunicacion, interaccion y las responsabilidades entre los objetos.
 
-## Ejemplos
+## Patrones mas Usados
 
 ### Factory Method
 Es un patron de diseño creacional que nos proporciona una interfaz para crear objetos usando una superclase, que permite a sus subclases usar la misma interfaz para crear objetos diferentes.
 
 ![image](./img/factory.png)
+
 > :bulb:
 > En este caso tenemos una superclase llamada logistica, con toda la info base para realizar la logistica de envios. Esta superclase es la que nos proporciona la interfaz para crear objetos distintos como una logistica terrestre y una logistica maritima con propiedades en comun de la superclase y a la vez propias.
 
@@ -72,14 +73,49 @@ Es un patrón también creacional que nos asegura que una clase u objeto se crea
 ⚠️ Este patrón es imposible de usar en un constructor normal, ya que al llamar al constructor, siempre se devolverá una nueva instancia.
 
 ⏫ Nos da la posibilidad de acceder a un objeto desde cualquier parte del programa, a la vez que evita que otro código sobrescriba esa instancia.
+
 ![image](./img/singleton.png)
 
 
 ### Chain of responsability
 Es un patron de diseño de comportamiento, el cual estructura las solicitudes en una cadena de manejadores/controladores. Cada manejador decide como procesar esta solicitud, sí bloquearla o pasarla al siguiente manejador.
+
 ![image](./img/chain-of-responsibility.png)
 
 > :bulb:
 > Por ejemplo podrias tener un sistema de login en una app de pedidos, el cual deseas permitir el acceso solo a usuarios autenticados, de forma que puedan hacer pedidos. Ademas de que los usuarios administrativos tengan acceso a todo el sistema.
 
 > Las comprobaciones se deberian hacer de forma secuencial. La app intentara autenticar a un usuario al recibir la solicitud con sus credenciales, sí son correctas continuara con otra validacion de token, y luego de cache, etc; hasta que tenga acceso al sistema de pedidos. Cada una de estas validaciones son un manejador.
+
+# :bricks:Patrones Arquitectonicos
+
+Son un marco de referencia que se usa para definir y construir sistemas de software.
+
+## Ventajas
+### 🥇Cambios iniciales en el diseño 
+La mayoría de los patrones arquitectónicos permiten realizar ajustes en las etapas tempranas de diseño, dando la oportunidad de crear un patrón flexible y robusto que evite futuros errores.
+
+### 🥈Sistemas optimizados
+Gracias a los patrones de arquitectura se pueden construir modelos reutilizables que proporcionan una estructura escalable y que puede ser optimizada las veces que sean necesarias.
+
+### 🥉Puente de comunicación
+Un patrón de arquitectura de software sirve, entre sus principales funciones, como base para la comunicación entre los distintos elementos.
+
+## Patrones mas Usados
+
+### Arquitectura por capas
+Se basa en el enfoque por niveles. Cada nivel presta un servicio especifico al nivel superior. Su punto central es la persistencia de la informacion en la base de datos.
+✍️ La estructura de esta arquitectura mas usada es el MVC (Model View Controller), estas son sus capas:
+
+#### 1. Capa de Persistencia (Base de datos)
+
+
+#### 2. Capa de Logica (Modelo)
+
+
+#### 3. Capa Intermedia (Controlador)
+
+
+#### 4. Capa de Presentacion (Vista)
+
+
