@@ -101,9 +101,9 @@ Gracias a los patrones de arquitectura se pueden construir modelos reutilizables
 ### 🥉Puente de comunicación
 Un patrón de arquitectura de software sirve, entre sus principales funciones, como base para la comunicación entre los distintos elementos.
 
-## Patrones mas Usados
+## 📂Patrones mas Usados
 
-### Arquitectura por capas
+###  Arquitectura por capas
 Se basa en el enfoque por niveles. Cada nivel presta un servicio especifico al nivel superior. Su punto central es la persistencia de la informacion en la base de datos.
 
 ✍️ La estructura de esta arquitectura mas usada es el MVC (Model View Controller), estas son sus capas:
@@ -159,3 +159,27 @@ Esta arquitectura viene a cambiar la idea de un sistema grande e incontrolable, 
 > Si en algun momento alguno de estos servicios necesitan mas recursos de procesamiento porque el fin de semana hubo mas demanda de series de terror, se podra hacer facilmente.
 
 ![image](./img/microservices.png)
+
+# 👨‍💻Conceptos en Ingeniera de Software
+
+## Atributos de Calidad 
+Nos ayudan a garantizar que un sistema va a funcionar de forma estable, cumple con los requerimientos tecnicos y a su vez es capáz de satisfacer las necesidades del usuario.
+
+### 1. Funcionalidad 
+El software debe cumplir con las funciones implicitas y explicitas para el cual fue diseñado.
+> 🔴
+> Una calculadura, su funcionalidad implicita sera que al menos puedas sumar, restar, multiplicar y dividir numeros.
+
+> 🟢
+> De forma explicita se deberian manejar las excepciones, como por ejemplo que al dividir por 0 se regrese un mensaje amistoso de error.
+
+🫤Pasa mucho encontrar funciones que no se usan y otras que el usuario require pero no existen.
+
+### 2. Confiabilidad
+Debemos asegurarnos de que nuestro sistema funcione de forma optima en cualquier ambiente y nivel de demanda.
+
+😵‍💫 En mi maquina si funciona, elimina este pensamiento.
+
+- Permite que tu aplicacion evolucione. Si algo ya funciona no significa que no pueda ser mejorado.
+-
+-
