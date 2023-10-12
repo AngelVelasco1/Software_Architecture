@@ -109,14 +109,53 @@ Se basa en el enfoque por niveles. Cada nivel presta un servicio especifico al n
 ✍️ La estructura de esta arquitectura mas usada es el MVC (Model View Controller), estas son sus capas:
 
 #### 1. Capa de Persistencia (Base de datos)
-
+Es la capa inferior donde se almacena la informacion, ya sea en una base de datos o en memoria.
 
 #### 2. Capa de Logica (Modelo)
-
+Tenemos toda la logica perteneciente a nuestro negocio, el mapeo con la base de datos, la definicion de relaciones, funcionamiento de las entidades, etc.
 
 #### 3. Capa Intermedia (Controlador)
-
+Es la capa que recibe la peticion del usuario, en donde se contienen todas las reglas y metodos para transformar la peticion en una respuesta.
 
 #### 4. Capa de Presentacion (Vista)
+Es la capa superior donde se renderiza la vista a mostrar al usuario. Normalmente se usan tecnologias como HTML, CSS, JS y algun framework frontend.
+
+![image](./img/mvc.png)
+
+### Arquitectura por Eventos
+Los programas que usan esta arquitectura pasa el mayor tiempo 'esperando que algo ocurra (eventos)'. Un evento puede ser un click, un cambio de estado, etc.
+
+- Esta pensado para aplicaciones basadas en datos asincronos
+- Aplicaciones escalables
 
 
+![image](./img/events.png)
+
+### Arquitectura MicroKernel
+Esta basado en crear aplicaciones extensibles a traves de modulos o como son realmente llamados **plugins**
+Este arquetipo esta dividido en dos componentes:
+
+💙 **Sistema Central (Core)**
+
+   Contiene los elementos esenciales para que la app funcione correctamente.
+
+💙 **Modulos (Plugins)**
+
+   Añaden caracteristicas/funcionalidades extras que se implementan en el core.
+
+> Orientado a sistemas  que necesitan actualizarse con frecuencia y necesitan mantener una conexion constante entre diferentes funciones.
+
+![image](./img/kernel.png)
+
+### Arquitectura de Micro-Servicios
+Esta arquitectura viene a cambiar la idea de un sistema grande e incontrolable, por uno con una gran cantidad de programas pequeños que funcionan libremente.
+
+- Facilita que las aplicaciones crezcan, sean flexibles y manejables sin afectar otros modulos (servicios) de la app.
+- Cada microservicio puede asignar diferentes capacidades de procesamiento, persistencia, codigo, etc.
+
+> 🤓
+> Imagina por ejemplo netflix, cada interfaz es un microservicio, por ejemplo: la lista de favoritos, calificaciones, cada categoria de una serie o pelicula, la seccion de configuracion, etc.
+
+> Si en algun momento alguno de estos servicios necesitan mas recursos de procesamiento porque el fin de semana hubo mas demanda de series de terror, se podra hacer facilmente.
+
+![image](./img/microservices.png)
