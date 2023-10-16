@@ -181,5 +181,21 @@ Debemos asegurarnos de que nuestro sistema funcione de forma optima en cualquier
 😵‍💫 En mi maquina si funciona, elimina este pensamiento.
 
 - Permite que tu aplicacion evolucione. Si algo ya funciona no significa que no pueda ser mejorado.
--
--
+- Construye software tolerante a errores, usando excepciones de errores.
+- Usa expresiones regulares para validar datos
+
+### 3. Usabilidad
+Se refiere a crear sistemas intuitivos, faciles de aprender y usar
+
+🖐️ Entre mas sencillo es un sistema, mayor es la aceptacion por los usuarios.
+
+### 4. Rendimiento
+Debemos preocuparno por el rendimiento del sistema, a nadie le gusta usar un sistema lento o pesado.
+
+🧪 Implementa pruebas de rendimiento que garanticen el correcto uso de los recursos
+💎 Usa codigo limpio, al optimizar tu codigo el funcionamiento sera el mismo pero la velocidad de ejecucion sera mucho mejor. 
+
+### 5. Mantenimiento
+Debes asegurarte que tu codigo sea autodescriptivo y facil de entender; esto quiere decir que si en algun momento tu yo del futuro o algun otra persona tiene que modificarlo; sea capaz entenderlo y refactorizarlo.
+
+🏆 Usa las mejores practicas, esto hara que el codigo sea mas simple de entender y facil de mantener.
